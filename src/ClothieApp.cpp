@@ -23,6 +23,7 @@ struct ClothieApp : public App
         ds::DeviceType type = (ds::DeviceType)SENSOR_TYPE;
         ds::Option option;
         option.enableColor = true;
+        option.enableBody = true;
         mDevice = ds::Device::create(type, option);
         if (!mDevice->isValid())
         {
